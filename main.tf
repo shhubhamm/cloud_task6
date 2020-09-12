@@ -66,8 +66,6 @@ resource "aws_db_instance" "mydb" {
   parameter_group_name = "default.mysql8.0"
   publicly_accessible = "true"
   port = "3306"
-  final_snapshot_identifier = "mysql-backup"
-  skip_final_snapshot = "true"
 }
 
 output "Database_Name" {
